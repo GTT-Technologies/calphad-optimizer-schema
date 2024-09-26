@@ -1,0 +1,199 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Two-Phase Equilibrium Data",
+    "description": "A JSON schema representing two-phase equilibrium data.",
+    "type": "object",
+    "properties": {
+        "add_dual_error": {
+            "type": "boolean"
+        },
+        "check_stability": {
+            "type": "boolean"
+        },
+        "class": {
+            "type": "string"
+        },
+        "comments": {
+            "type": "string"
+        },
+        "comp_weight": {
+            "type": "number"
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "df_weight": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "phase": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        },
+        "dormant_phases": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "mv": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "condition": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "phase_1": {
+            "type": "string"
+        },
+        "phase_2": {
+            "type": "string"
+        },
+        "pressure": {
+            "type": "object",
+            "properties": {
+                "unit": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "number"
+                }
+            }
+        },
+        "selected": {
+            "type": "boolean"
+        },
+        "source": {
+            "type": "string"
+        },
+        "stability_weight": {
+            "type": "number"
+        },
+        "system_composition": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "component": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        },
+        "table": {
+            "type": "object",
+            "properties": {
+                "active": {
+                    "type": "array",
+                    "items": {
+                        "type": "boolean"
+                    }
+                },
+                "id": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "reference": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "temperature": {
+            "type": "object",
+            "properties": {
+                "unit": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            }
+        },
+        "user_defined": {
+            "type": "boolean"
+        },
+        "wf_metadata": {
+            "type": "object",
+            "properties": {
+                "cardinality": {
+                    "type": "boolean"
+                },
+                "mv": {
+                    "type": "string"
+                },
+                "references": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "accuracy": {
+                                "type": [
+                                    "string",
+                                    "number"
+                                ]
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "trust": {
+                                "type": [
+                                    "string",
+                                    "number"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

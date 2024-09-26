@@ -1,0 +1,188 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Solidus Temperature Data",
+    "description": "A JSON schema representing solidus temperature data.",
+    "type": "object",
+    "required": [
+        "name",
+        "source",
+        "class",
+        "liquid_phase",
+        "components",
+        "pressure",
+        "phases",
+        "table",
+        "mv",
+        "add_dual_error"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "selected": {
+            "type": "boolean"
+        },
+        "comments": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "user_defined": {
+            "type": "boolean"
+        },
+        "source": {
+            "type": "string"
+        },
+        "class": {
+            "type": "string",
+            "enum": [
+                "Solidus temperature"
+            ]
+        },
+        "liquid_phase": {
+            "type": "string"
+        },
+        "components": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "formula": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "required": [
+                    "formula",
+                    "unit",
+                    "value"
+                ]
+            }
+        },
+        "pressure": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        },
+        "phases": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "table": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "active": {
+                    "type": "array",
+                    "items": {
+                        "type": "boolean"
+                    }
+                },
+                "weight": {
+                    "oneOf": [
+                        {
+                            "type": "number"
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            }
+                        }
+                    ]
+                }
+            },
+            "reference": {
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            },
+            "required": [
+                "id",
+                "active",
+                "weight",
+                "reference"
+            ]
+        },
+        "mv": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "condition": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "unit": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "condition",
+                    "value",
+                    "unit"
+                ]
+            }
+        },
+        "add_dual_error": {
+            "type": "boolean"
+        },
+        "wf_metadata": {
+            "type": "object",
+            "properties": {
+                "references": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "cardinality": {
+                    "type": "boolean"
+                },
+                "mv": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

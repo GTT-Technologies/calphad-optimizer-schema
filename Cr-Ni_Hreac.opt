@@ -1,0 +1,754 @@
+{
+    "database": {
+        "file_name": "Cr-Ni_Tang_Start.dat",
+        "content": " System Ni-Cr                                                                L F\r\n    6    0    0    0\r\n Cr#LIQUID\r\n    2\r\n  24349.6332      34.9899702    \r\n  2180.00000      26.9080000     -.378870000E-02 0.886326000E-05 -278500.000    \r\n 1 -.997983000E-19   6.00\r\n  6000.00000      50.0000000      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n Ni#LIQUID\r\n    2\r\n  18253.7606      42.4196252    \r\n  1728.00000      22.0960000     0.968140000E-02  0.00000000      0.00000000    \r\n 1 0.160573560E-18   6.00\r\n  3000.00000      43.1000000      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n Cr#HSER\r\n    3\r\n  9.68121100      23.5697569    \r\n  2180.00000      26.9080000     -.378870000E-02 0.886326000E-05 -278500.000    \r\n 1  0.00000000       0.00\r\n  6000.00000      50.0000000      0.00000000      0.00000000      0.00000000    \r\n 1 0.259673400E+35 -10.00\r\n  6000.00001      50.0004295      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n #a\r\n    1\r\n  1.00000000      0.00000000    \r\n  6000.00001      0.00000000      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n #bT\r\n    1\r\n  0.00000000     -1.00000000    \r\n  6000.00001      0.00000000      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n Ni#HSER\r\n    3\r\n  1839.06979      33.0226064    \r\n  1728.00000      22.0960000     0.968140000E-02  0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n  3000.00000      43.1000000      0.00000000      0.00000000      0.00000000    \r\n 1 -.101478600E+34 -10.00\r\n  3000.00001      43.0828145      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n    2    7    0    2    2    2    2    2    2    5\r\n Ni                       Cr\r\n    58.69340000              51.99610000\r\n   6   1   2   3   4   5   6\r\n   6   1   2   3   4   5   6\r\n LIQUID\r\n RKMP \r\n Cr                           0.00000     0.00000    \r\n  10  2           0.00000    1.00000\r\n   1   0\r\n    2   26   27  1.00000000    \r\n Cr#LIQUID\r\n Ni                           0.00000     0.00000    \r\n  10  2           1.00000    0.00000\r\n   1   0\r\n    4   31   32  1.00000000    \r\n Ni#LIQUID\r\n   2\r\n   1   2   2\r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n   0\r\n LIQUID\r\n RKMP \r\n Cr                           0.00000     0.00000    \r\n  10  2           0.00000    1.00000\r\n   1   0\r\n    2   26   27  1.00000000    \r\n Cr#LIQUID\r\n Ni                           0.00000     0.00000    \r\n  10  2           1.00000    0.00000\r\n   1   0\r\n    4   31   32  1.00000000    \r\n Ni#LIQUID\r\n   2\r\n   1   2   2\r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n   0\r\n FCC_A1\r\n SUBLM\r\n 0.333333     0.280000    \r\n CrVa                         0.00000     0.00000    \r\n  22  3           0.00000    1.00000\r\n   3   0\r\n    1   23   25  1.00000000    \r\n Cr#HSER\r\n    5   33   33  7284.00000    \r\n #a\r\n    6   34   34 0.163000000    \r\n #bT\r\n  0.00000      0.00000    \r\n NiVa                         0.00000     0.00000    \r\n  22  3           1.00000    0.00000\r\n   1   0\r\n    3   28   30  1.00000000    \r\n Ni#HSER\r\n  633.000     0.520000    \r\n   2\r\n  1.00000      1.00000    \r\n   2   1\r\n Cr                       Ni\r\n Va\r\n   1   2\r\n   1   1\r\n   3\r\n   1   2   3   1\r\n -3605.00000     -1.91000000    \r\n   0\r\n   3\r\n   1   2   3   2\r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n   0\r\n FCC_A1\r\n SUBLM\r\n 0.333333     0.280000    \r\n CrVa                         0.00000     0.00000    \r\n  22  3           0.00000    1.00000\r\n   3   0\r\n    1   23   25  1.00000000    \r\n Cr#HSER\r\n    5   33   33  7284.00000    \r\n #a\r\n    6   34   34 0.163000000    \r\n #bT\r\n  0.00000      0.00000    \r\n NiVa                         0.00000     0.00000    \r\n  22  3           1.00000    0.00000\r\n   1   0\r\n    3   28   30  1.00000000    \r\n Ni#HSER\r\n  633.000     0.520000    \r\n   2\r\n  1.00000      1.00000    \r\n   2   1\r\n Cr                       Ni\r\n Va\r\n   1   2\r\n   1   1\r\n   3\r\n   1   2   3   1\r\n -3605.00000     -1.91000000    \r\n   0\r\n   3\r\n   1   2   3   2\r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n   0\r\n BCC_A2\r\n SUBLM\r\n  1.00000     0.400000    \r\n CrVa                         0.00000     0.00000    \r\n  22  3           0.00000    1.00000\r\n   1   0\r\n    1   23   25  1.00000000    \r\n Cr#HSER\r\n  0.00000      0.00000    \r\n NiVa                         0.00000     0.00000    \r\n  22  3           1.00000    0.00000\r\n   3   0\r\n    3   28   30  1.00000000    \r\n Ni#HSER\r\n    5   33   33  8715.08400    \r\n #a\r\n    6   34   34 -3.55600000    \r\n #bT\r\n  575.000     0.850000    \r\n   2\r\n  1.00000      3.00000    \r\n   2   1\r\n Cr                       Ni\r\n Va\r\n   1   2\r\n   1   1\r\n   3\r\n   1   2   3   2\r\n  2373.00000      4.00000000    \r\n  617.000000      0.00000000    \r\n   0\r\n   3\r\n   1   2   3   2\r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n   0\r\n BCC_A2\r\n SUBLM\r\n  1.00000     0.400000    \r\n CrVa                         0.00000     0.00000    \r\n  22  3           0.00000    1.00000\r\n   1   0\r\n    1   23   25  1.00000000    \r\n Cr#HSER\r\n  0.00000      0.00000    \r\n NiVa                         0.00000     0.00000    \r\n  22  3           1.00000    0.00000\r\n   3   0\r\n    3   28   30  1.00000000    \r\n Ni#HSER\r\n    5   33   33  8715.08400    \r\n #a\r\n    6   34   34 -3.55600000    \r\n #bT\r\n  575.000     0.850000    \r\n   2\r\n  1.00000      3.00000    \r\n   2   1\r\n Cr                       Ni\r\n Va\r\n   1   2\r\n   1   1\r\n   3\r\n   1   2   3   2\r\n  2373.00000      4.00000000    \r\n  617.000000      0.00000000    \r\n   0\r\n   3\r\n   1   2   3   2\r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n  0.00000000      0.00000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n   0\r\n Cr_BCC_A2(s)                \r\n  22  3           0.00000    1.00000\r\n   0   0\r\n  7.48962594      23.5642203    \r\n  2180.00000      26.9080000     -.378870000E-02 0.886326000E-05 -278500.000    \r\n  0.00000000    \r\n 1  0.00000000       0.00\r\n  6000.00000      50.0000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n 1 0.259673400E+35 -10.00\r\n  6000.00001      50.0004295      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n -934.500     -.240000E-01 0.333333     0.280000    \r\n Cr_FCC_A1(s2)               \r\n  22  3           0.00000    1.00000\r\n   0   0\r\n  7428.66583      23.6387846    \r\n  2180.00000      26.9080000     -.378870000E-02 0.886326000E-05 -278500.000    \r\n  0.00000000    \r\n 1  0.00000000       0.00\r\n  6000.00000      50.0000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n 1 0.259673400E+35 -10.00\r\n  6000.00001      50.0004295      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n -369.667     -.820000      1.00000     0.400000    \r\n Ni_BCC_A2(s)                \r\n  22  3           1.00000    0.00000\r\n   0   0\r\n  10554.1538      36.5786064    \r\n  1728.00000      22.0960000     0.968140000E-02  0.00000000      0.00000000    \r\n  0.00000000    \r\n 1  0.00000000       0.00\r\n  3000.00000      43.1000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n 1 -.101478600E+34 -10.00\r\n  3000.00001      43.0828145      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n  575.000     0.850000      1.00000     0.400000    \r\n Ni_FCC(s2)                  \r\n  22  3           1.00000    0.00000\r\n   0   0\r\n  1839.06979      33.0226064    \r\n  1728.00000      22.0960000     0.968140000E-02  0.00000000      0.00000000    \r\n  0.00000000    \r\n 1  0.00000000       0.00\r\n  3000.00000      43.1000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n 1 -.101478600E+34 -10.00\r\n  3000.00001      43.0828145      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n  633.000     0.520000     0.333333     0.280000    \r\n CrNi2_CRNI2(s)              \r\n  10  5           2.00000    1.00000\r\n   0   0\r\n -2312.17921      96.4149698    \r\n  1728.00000      71.1000000     0.155741000E-01 0.886326000E-05 -278500.000    \r\n  0.00000000    \r\n 1  0.00000000       0.00\r\n  2180.00000      113.108000     -.378870000E-02 0.886326000E-05 -278500.000    \r\n  0.00000000    \r\n 1 -.202957200E+34 -10.00\r\n  3000.00000      136.200000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n 1 0.239377680E+35 -10.00\r\n  6000.00000      50.0000000      0.00000000      0.00000000      0.00000000    \r\n  0.00000000    \r\n 1 0.259673400E+35 -10.00\r\n  6000.00001      50.0004295      0.00000000      0.00000000      0.00000000    \r\n 1  0.00000000       0.00\r\n"
+    },
+    "experiments": [
+        {
+            "name": "deltaHR: CrNi2",
+            "selected": true,
+            "comments": "",
+            "date": "26/Sep/2024 09:07:14",
+            "user_defined": false,
+            "source": "calphad_optimizer",
+            "class": "Heat of reaction",
+            "product": "CrNi2_CRNI2(s)",
+            "reactants": [
+                {
+                    "formula": "Ni",
+                    "reference_phase": "FCC_A1#1",
+                    "unit": "mol",
+                    "value": [
+                        2
+                    ],
+                    "uncertainty": null
+                },
+                {
+                    "formula": "Cr",
+                    "reference_phase": "BCC_A2#1",
+                    "unit": "mol",
+                    "value": [
+                        1
+                    ],
+                    "uncertainty": null
+                }
+            ],
+            "pressure": {
+                "value": 1,
+                "unit": "atm"
+            },
+            "temperature": {
+                "value": 1583,
+                "unit": "K"
+            },
+            "table": {
+                "id": [
+                    1
+                ],
+                "active": [
+                    true
+                ],
+                "weight": 1,
+                "reference": ""
+            },
+            "mv": [
+                {
+                    "condition": "deltaH",
+                    "value": [
+                        -6000
+                    ],
+                    "unit": "J"
+                }
+            ],
+            "wf_metadata": {
+                "references": [],
+                "cardinality": true,
+                "mv": ""
+            }
+        },
+        {
+            "name": "Solidus fcc (Ni)",
+            "selected": true,
+            "comments": "Data from Svetchnikov 1962 is not considered in the assessment.",
+            "date": "26/Sep/2024 09:07:14",
+            "user_defined": false,
+            "source": "calphad_optimizer",
+            "class": "Solidus temperature",
+            "liquid_phase": "LIQUID#1",
+            "components": [
+                {
+                    "formula": "Cr",
+                    "unit": "mol%",
+                    "value": [
+                        5,
+                        10,
+                        15,
+                        20,
+                        25,
+                        30,
+                        35,
+                        40,
+                        42,
+                        45,
+                        47,
+                        49,
+                        50,
+                        51
+                    ]
+                },
+                {
+                    "formula": "Ni",
+                    "unit": "mol%",
+                    "value": [
+                        95,
+                        90,
+                        85,
+                        80,
+                        75,
+                        70,
+                        65,
+                        60,
+                        58,
+                        55,
+                        53,
+                        51,
+                        50,
+                        49
+                    ]
+                }
+            ],
+            "pressure": {
+                "value": 1,
+                "unit": "atm"
+            },
+            "phases": [
+                "LIQUID#1",
+                "LIQUID#2",
+                "FCC_A1#1"
+            ],
+            "table": {
+                "id": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                ],
+                "active": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "weight": 0.0033,
+                "reference": "Jenkins 1937"
+            },
+            "mv": [
+                {
+                    "condition": "T",
+                    "value": [
+                        1703,
+                        1706,
+                        1683,
+                        1680,
+                        1674,
+                        1659,
+                        1647,
+                        1628,
+                        1634,
+                        1634,
+                        1625,
+                        1602,
+                        1612,
+                        1602
+                    ],
+                    "unit": "K"
+                }
+            ],
+            "add_dual_error": false,
+            "wf_metadata": {
+                "references": [],
+                "cardinality": true,
+                "mv": ""
+            }
+        },
+        {
+            "name": "Solidus bcc (Cr)",
+            "selected": true,
+            "comments": "",
+            "date": "26/Sep/2024 09:07:14",
+            "user_defined": false,
+            "source": "calphad_optimizer",
+            "class": "Solidus temperature",
+            "liquid_phase": "LIQUID#1",
+            "components": [
+                {
+                    "formula": "Cr",
+                    "unit": "mol%",
+                    "value": [
+                        91,
+                        83,
+                        77,
+                        66,
+                        64,
+                        61,
+                        62,
+                        65,
+                        67,
+                        70
+                    ]
+                },
+                {
+                    "formula": "Ni",
+                    "unit": "mol%",
+                    "value": [
+                        9,
+                        17,
+                        23,
+                        34,
+                        36,
+                        39,
+                        38,
+                        35,
+                        33,
+                        30
+                    ]
+                }
+            ],
+            "pressure": {
+                "value": 1,
+                "unit": "atm"
+            },
+            "phases": [
+                "LIQUID#1",
+                "LIQUID#2",
+                "BCC_A2#1"
+            ],
+            "table": {
+                "id": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ],
+                "active": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "weight": [
+                    0.0033,
+                    0.0033,
+                    0.0033,
+                    0.0033,
+                    0.0033,
+                    0.00165,
+                    0.00165,
+                    0.00165,
+                    0.00165,
+                    0.00165
+                ],
+                "reference": [
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Jenkins 1937",
+                    "Jenkins 1937",
+                    "Jenkins 1937",
+                    "Jenkins 1937",
+                    "Jenkins 1937"
+                ]
+            },
+            "mv": [
+                {
+                    "condition": "T",
+                    "value": [
+                        1941,
+                        1822,
+                        1768,
+                        1670,
+                        1649,
+                        1613,
+                        1613,
+                        1611,
+                        1615,
+                        1623
+                    ],
+                    "unit": "K"
+                }
+            ],
+            "add_dual_error": false,
+            "wf_metadata": {
+                "references": [],
+                "cardinality": true,
+                "mv": ""
+            }
+        },
+        {
+            "name": "Liquidus bcc (Cr)",
+            "selected": true,
+            "comments": "",
+            "date": "26/Sep/2024 09:07:14",
+            "user_defined": false,
+            "source": "calphad_optimizer",
+            "class": "Liquidus temperature",
+            "liquid_phase": "LIQUID#1",
+            "components": [
+                {
+                    "formula": "Cr",
+                    "unit": "mol%",
+                    "value": [
+                        91,
+                        84,
+                        79,
+                        69,
+                        67,
+                        65,
+                        63,
+                        61,
+                        60,
+                        57,
+                        53,
+                        55,
+                        57,
+                        60,
+                        65,
+                        70
+                    ]
+                },
+                {
+                    "formula": "Ni",
+                    "unit": "mol%",
+                    "value": [
+                        9,
+                        16,
+                        21,
+                        31,
+                        33,
+                        35,
+                        37,
+                        39,
+                        40,
+                        43,
+                        47,
+                        45,
+                        43,
+                        40,
+                        35,
+                        30
+                    ]
+                }
+            ],
+            "pressure": {
+                "value": 1,
+                "unit": "atm"
+            },
+            "phases": [
+                "LIQUID#1",
+                "LIQUID#2",
+                "BCC_A2#1"
+            ],
+            "table": {
+                "id": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                ],
+                "active": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "weight": 0.0033,
+                "reference": [
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Svetchnikov 1962",
+                    "Jenkins 1937",
+                    "Jenkins 1937",
+                    "Jenkins 1937",
+                    "Jenkins 1937",
+                    "Jenkins 1937",
+                    "Jenkins 1937"
+                ]
+            },
+            "mv": [
+                {
+                    "condition": "T",
+                    "value": [
+                        2058,
+                        1985,
+                        1937,
+                        1816,
+                        1783,
+                        1751,
+                        1726,
+                        1704,
+                        1680,
+                        1658,
+                        1627,
+                        1636,
+                        1670,
+                        1684,
+                        1748,
+                        1800
+                    ],
+                    "unit": "K"
+                }
+            ],
+            "add_dual_error": false,
+            "wf_metadata": {
+                "references": [],
+                "cardinality": true,
+                "mv": ""
+            }
+        },
+        {
+            "name": "Liquidus fcc (Ni)",
+            "selected": true,
+            "comments": "",
+            "date": "26/Sep/2024 09:07:14",
+            "user_defined": false,
+            "source": "calphad_optimizer",
+            "class": "Liquidus temperature",
+            "liquid_phase": "LIQUID#1",
+            "components": [
+                {
+                    "formula": "Cr",
+                    "unit": "mol%",
+                    "value": [
+                        5,
+                        10,
+                        15,
+                        20,
+                        24,
+                        25,
+                        30,
+                        35,
+                        40,
+                        47,
+                        49,
+                        50,
+                        51
+                    ]
+                },
+                {
+                    "formula": "Ni",
+                    "unit": "mol%",
+                    "value": [
+                        95,
+                        90,
+                        85,
+                        80,
+                        76,
+                        75,
+                        70,
+                        65,
+                        60,
+                        53,
+                        51,
+                        50,
+                        49
+                    ]
+                }
+            ],
+            "pressure": {
+                "value": 1,
+                "unit": "atm"
+            },
+            "phases": [
+                "LIQUID#1",
+                "LIQUID#2",
+                "FCC_A1#1"
+            ],
+            "table": {
+                "id": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                ],
+                "active": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "weight": 0.0033,
+                "reference": "Jenkins 1937"
+            },
+            "mv": [
+                {
+                    "condition": "T",
+                    "value": [
+                        1716,
+                        1708,
+                        1701,
+                        1697,
+                        1683,
+                        1683,
+                        1669,
+                        1660,
+                        1650,
+                        1629,
+                        1625,
+                        1622,
+                        1625
+                    ],
+                    "unit": "K"
+                }
+            ],
+            "add_dual_error": false,
+            "wf_metadata": {
+                "references": [],
+                "cardinality": true,
+                "mv": ""
+            }
+        }
+    ],
+    "parameters": [
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(LIQUID;Cr,Ni;0)A",
+            "identifier": "LIQUID",
+            "max": 100000,
+            "min": -100000,
+            "selected": true,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V1"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(LIQUID;Cr,Ni;0)B",
+            "identifier": "LIQUID",
+            "max": 100,
+            "min": -100,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V2"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(LIQUID;Cr,Ni;1)A",
+            "identifier": "LIQUID",
+            "max": 100000,
+            "min": -100000,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V3"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(LIQUID;Cr,Ni;1)B",
+            "identifier": "LIQUID",
+            "max": 100,
+            "min": -100,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V4"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(FCC_A1;Cr,Ni:Va;0)A",
+            "identifier": "FCC_A1",
+            "max": 100000,
+            "min": -100000,
+            "selected": true,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V5"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(FCC_A1;Cr,Ni:Va;0)B",
+            "identifier": "FCC_A1",
+            "max": 100,
+            "min": -100,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V6"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(FCC_A1;Cr,Ni:Va;1)A",
+            "identifier": "FCC_A1",
+            "max": 100000,
+            "min": -100000,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V7"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(FCC_A1;Cr,Ni:Va;1)B",
+            "identifier": "FCC_A1",
+            "max": 100,
+            "min": -100,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V8"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(BCC_A2;Cr,Ni:Va;0)A",
+            "identifier": "BCC_A2",
+            "max": 100000,
+            "min": -100000,
+            "selected": true,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V9"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(BCC_A2;Cr,Ni:Va;0)B",
+            "identifier": "BCC_A2",
+            "max": 100,
+            "min": -100,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V10"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(BCC_A2;Cr,Ni:Va;1)A",
+            "identifier": "BCC_A2",
+            "max": 100000,
+            "min": -100000,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V11"
+        },
+        {
+            "coupling": false,
+            "expression": "",
+            "id": "L(BCC_A2;Cr,Ni:Va;1)B",
+            "identifier": "BCC_A2",
+            "max": 100,
+            "min": -100,
+            "selected": false,
+            "staged": true,
+            "value": 0,
+            "variable_name": "V12"
+        }
+    ],
+    "optimizer_settings": {
+        "optimizer": "Nomad",
+        "hyperparameters": {
+            "Number of initial random evaluations": 20,
+            "Number of optimization evaluations": 1000,
+            "Vns search": 1,
+            "Initial mesh size": 0.01,
+            "Precision": 0.000001,
+            "Punishment coefficient": 4,
+            "Random state": 42,
+            "Direction type": "GPS N+1 RAND UNIFORM"
+        }
+    },
+    "version": "CalphadOptimizer_2.1.0"
+}

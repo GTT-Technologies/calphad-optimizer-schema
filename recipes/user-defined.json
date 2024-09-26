@@ -1,0 +1,127 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "User-defined recipe calculation schema 0.1",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "selected": {
+            "type": "boolean"
+        },
+        "comments": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "user_defined": {
+            "type": "boolean"
+        },
+        "source": {
+            "type": "string"
+        },
+        "class": {
+            "type": "string",
+            "enum": [
+                "User-defined"
+            ]
+        },
+        "initial_conditions": {
+            "type": "boolean"
+        },
+        "target_calculation": {
+            "type": "boolean"
+        },
+        "target": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "variable": {
+                    "type": "string"
+                },
+                "phase": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "type",
+                "variable",
+                "phase"
+            ]
+        },
+        "selected_phases_or_constituents": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "dormant_phases_or_constituents": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "table": {
+            "type": "object",
+            "properties": {
+                "levels": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "headers": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        }
+                    }
+                },
+                "values": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "array",
+                            "items": {
+                                "type": "integer"
+                            }
+                        },
+                        "selected": {
+                            "type": "array",
+                            "items": {
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "levels",
+                "headers",
+                "values"
+            ]
+        }
+    },
+    "required": [
+        "class",
+        "name",
+        "selected",
+        "date",
+        "user_defined",
+        "source",
+        "target_calculation",
+        "table"
+    ]
+}

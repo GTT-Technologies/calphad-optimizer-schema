@@ -1,0 +1,317 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Calphad Optimizer file 1.0",
+    "description": "A JSON schema representing a full optimization set.",
+    "type": "object",
+    "properties": {
+        "database": {
+            "type": "object",
+            "properties": {
+                "file_name": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "file_name",
+                "content"
+            ]
+        },
+        "experiments": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "class": {
+                        "type": "string"
+                    }
+                },
+                "allOf": [
+                    {
+                        "if": {
+                            "properties": {
+                                "class": {
+                                    "const": "Liquidus temperature"
+                                }
+                            }
+                        },
+                        "then": {
+                            "$ref": "solidus-liquidus.json"
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "class": {
+                                    "const": "Heat of reaction"
+                                }
+                            }
+                        },
+                        "then": {
+                            "$ref": "heat-reaction.json"
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "class": {
+                                    "const": "Heat of mixing"
+                                }
+                            }
+                        },
+                        "then": {
+                            "$ref": "heat-mixing.json"
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "class": {
+                                    "const": "User-defined"
+                                }
+                            }
+                        },
+                        "then": {
+                            "$ref": "user-defined.json"
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "class": {
+                                    "const": "Twp phase"
+                                }
+                            }
+                        },
+                        "then": {
+                            "$ref": "two-phase.json"
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "class": {
+                                    "const": "Solidus temperature"
+                                }
+                            }
+                        },
+                        "then": {
+                            "$ref": "solidus-liquidus.json"
+                        }
+                    }
+                ]
+            }
+        },
+        "parameters": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "coupling": {
+                        "type": "boolean"
+                    },
+                    "expression": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "identifier": {
+                        "type": "string"
+                    },
+                    "max": {
+                        "type": "integer"
+                    },
+                    "min": {
+                        "type": "integer"
+                    },
+                    "selected": {
+                        "type": "boolean"
+                    },
+                    "staged": {
+                        "type": "boolean"
+                    },
+                    "value": {
+                        "type": "integer"
+                    },
+                    "variable_name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "coupling",
+                    "expression",
+                    "id",
+                    "identifier",
+                    "max",
+                    "min",
+                    "selected",
+                    "staged",
+                    "value",
+                    "variable_name"
+                ]
+            }
+        },
+        "optimizer_settings": {
+            "type": "object",
+            "properties": {
+                "optimizer": {
+                    "type": "string",
+                    "enum": [
+                        "Nomad",
+                        "ChainGP"
+                    ]
+                }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "optimizer": {
+                                "const": "Nomad"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "optimizer": {
+                                "type": "string",
+                                "enum": [
+                                    "Nomad"
+                                ]
+                            },
+                            "hyperparameters": {
+                                "type": "object",
+                                "properties": {
+                                    "Number of initial random evaluations": {
+                                        "type": "integer"
+                                    },
+                                    "Number of optimization evaluations": {
+                                        "type": "integer"
+                                    },
+                                    "Vns search": {
+                                        "type": "integer"
+                                    },
+                                    "Initial mesh size": {
+                                        "type": "number"
+                                    },
+                                    "Precision": {
+                                        "type": "number"
+                                    },
+                                    "Punishment coefficient": {
+                                        "type": "number"
+                                    },
+                                    "Random state": {
+                                        "type": "integer"
+                                    },
+                                    "Direction type": {
+                                        "type": "string",
+                                        "enum": [
+                                            "ORTHO 1",
+                                            "ORTHO 2",
+                                            "ORTHO",
+                                            "ORTHO N+1 NEG",
+                                            "ORTHO N+1 UNI",
+                                            "ORTHO 2N",
+                                            "LT",
+                                            "LT 1",
+                                            "LT 2",
+                                            "LT N+1",
+                                            "GPS N+1",
+                                            "GPS N+1 STATIC UNIFORM",
+                                            "GPS N+1 RAND",
+                                            "GPS",
+                                            "GPS 2N RAND",
+                                            "GPS N+1 RAND UNIFORM"
+                                        ]
+                                    }
+                                },
+                                "required": [
+                                    "Number of initial random evaluations",
+                                    "Number of optimization evaluations",
+                                    "Vns search",
+                                    "Initial mesh size",
+                                    "Precision",
+                                    "Punishment coefficient",
+                                    "Random state",
+                                    "Direction type"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "optimizer": {
+                                "const": "ChainGP"
+                            }
+                        }
+                    },
+                    "then": {
+                        "optimizer": {
+                            "type": "string",
+                            "enum": [
+                                "ChainGP"
+                            ]
+                        },
+                        "hyperparameters": {
+                            "type": "object",
+                            "properties": {
+                                "Number of initial random evaluations": {
+                                    "type": "integer"
+                                },
+                                "Number of optimization evaluations": {
+                                    "type": "integer"
+                                },
+                                "Number of chained GPs": {
+                                    "type": "integer"
+                                },
+                                "Change interval length by factor": {
+                                    "type": "number"
+                                },
+                                "Punishment coefficient": {
+                                    "type": "number"
+                                },
+                                "Xi": {
+                                    "type": "number"
+                                },
+                                "Acquisition function": {
+                                    "type": "string"
+                                },
+                                "Random state": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": [
+                                "Number of initial random evaluations",
+                                "Number of optimization evaluations",
+                                "Number of chained GPs",
+                                "Change interval length by factor",
+                                "Punishment coefficient",
+                                "Xi",
+                                "Acquisition function",
+                                "Random state"
+                            ]
+                        },
+                        "required": [
+                            "optimizer",
+                            "hyperparameters"
+                        ]
+                    }
+                }
+            ]
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "database",
+        "experiments",
+        "parameters",
+        "optimizer_settings"
+    ]
+}

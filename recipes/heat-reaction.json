@@ -1,0 +1,189 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Heat of Reaction Data",
+    "description": "A JSON schema representing heat of reaction data.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "selected": {
+            "type": "boolean"
+        },
+        "comments": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "user_defined": {
+            "type": "boolean"
+        },
+        "source": {
+            "type": "string"
+        },
+        "class": {
+            "type": "string",
+            "enum": [
+                "Heat of reaction"
+            ]
+        },
+        "product": {
+            "type": "string"
+        },
+        "reactants": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "formula": {
+                        "type": "string"
+                    },
+                    "reference_phase": {
+                        "type": "string"
+                    },
+                    "unit": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "uncertainty": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    }
+                },
+                "required": [
+                    "formula",
+                    "reference_phase",
+                    "unit",
+                    "value",
+                    "uncertainty"
+                ]
+            }
+        },
+        "pressure": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        },
+        "temperature": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        },
+        "table": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "active": {
+                    "type": "array",
+                    "items": {
+                        "type": "boolean"
+                    }
+                },
+                "weight": {
+                    "type": "number"
+                },
+                "reference": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "active",
+                "weight",
+                "reference"
+            ]
+        },
+        "mv": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "condition": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "unit": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "condition",
+                    "value",
+                    "unit"
+                ]
+            }
+        },
+        "wf_metadata": {
+            "type": "object",
+            "properties": {
+                "references": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "cardinality": {
+                    "type": "boolean"
+                },
+                "mv": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "references",
+                "cardinality",
+                "mv"
+            ]
+        }
+    },
+    "required": [
+        "name",
+        "source",
+        "class",
+        "product",
+        "reactants",
+        "pressure",
+        "temperature",
+        "table",
+        "mv"
+    ]
+}
