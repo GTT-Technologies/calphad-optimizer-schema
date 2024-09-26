@@ -43,11 +43,11 @@ validating instance of jsonschema, using a registry.
 
 ```python
 # main schema
-with open("recipes/co-schema.json", "r") as main_file:
+with open("schema/co-schema.json", "r") as main_file:
     main_schema = json.load(main_file)
 
 # this is the directory where the subschemas are stored (in this repo)
-SCHEMAS = Path(os.getcwd()) / Path("./recipes")
+SCHEMAS = Path(os.getcwd()) / Path("./schema")
 
 # helper function that adds the ability to retrieve the subschemas from the filesystem
 def retrieve_from_filesystem(uri: str):
@@ -68,16 +68,11 @@ Using the created validator, we can validate the opt file.
 
 
 ```python
-
 try:
     opt_file_validator.validate(json_data)
     print("Instance is valid!")
 except Exception as e:
     print(e)
-
-
-
-
 ```
 
     Instance is valid!
