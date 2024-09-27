@@ -81,7 +81,7 @@
                         "if": {
                             "properties": {
                                 "class": {
-                                    "const": "Twp phase"
+                                    "const": "Two-phase equilibrium"
                                 }
                             }
                         },
@@ -201,7 +201,10 @@
                                         "type": "integer"
                                     },
                                     "Number of optimization evaluations": {
-                                        "type": ["integer", "string"]
+                                        "type": [
+                                            "integer",
+                                            "string"
+                                        ]
                                     },
                                     "Vns search": {
                                         "type": "integer"
