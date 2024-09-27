@@ -93,6 +93,18 @@
                         "if": {
                             "properties": {
                                 "class": {
+                                    "const": "Enthalpy increment"
+                                }
+                            }
+                        },
+                        "then": {
+                            "$ref": "enthalpy-increment.json"
+                        }
+                    },
+                    {
+                        "if": {
+                            "properties": {
+                                "class": {
                                     "const": "Solidus temperature"
                                 }
                             }

@@ -1,0 +1,194 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Enthalpy Increment Data",
+    "description": "Schema for recipe to calculate enthalpy increment",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "selected": {
+            "type": "boolean"
+        },
+        "comments": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string"
+        },
+        "user_defined": {
+            "type": "boolean"
+        },
+        "source": {
+            "type": "string"
+        },
+        "class": {
+            "type": "string",
+            "enum": [
+                "Enthalpy increment"
+            ]
+        },
+        "composition": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "formula": {
+                        "type": "string"
+                    },
+                    "amount": {
+                        "type": "number"
+                    },
+                    "unit": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "formula",
+                    "amount",
+                    "unit"
+                ]
+            }
+        },
+        "pressure": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        },
+        "reference_temperature": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "number"
+                },
+                "unit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        },
+        "selected_phases_or_constituents": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "temperature": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "unit": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ]
+        },
+        "table": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "active": {
+                    "type": "array",
+                    "items": {
+                        "type": "boolean"
+                    }
+                },
+                "weight": {
+                    "type": "integer"
+                },
+                "reference": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "active",
+                "weight"
+            ]
+        },
+        "mv": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "condition": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "unit": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "condition",
+                    "value",
+                    "unit"
+                ]
+            }
+        },
+        "wf_metadata": {
+            "type": "object",
+            "properties": {
+                "references": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "cardinality": {
+                    "type": "boolean"
+                },
+                "mv": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "name",
+        "selected",
+        "comments",
+        "date",
+        "user_defined",
+        "source",
+        "class",
+        "composition",
+        "pressure",
+        "reference_temperature",
+        "selected_phases_or_constituents",
+        "temperature",
+        "table",
+        "mv"
+    ]
+}
