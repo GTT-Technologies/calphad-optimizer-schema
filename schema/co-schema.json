@@ -134,10 +134,10 @@
                         "type": "string"
                     },
                     "max": {
-                        "type": "integer"
+                        "type": "number"
                     },
                     "min": {
-                        "type": "integer"
+                        "type": "number"
                     },
                     "selected": {
                         "type": "boolean"
@@ -146,7 +146,7 @@
                         "type": "boolean"
                     },
                     "value": {
-                        "type": "integer"
+                        "type": "number"
                     },
                     "variable_name": {
                         "type": "string"
