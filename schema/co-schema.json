@@ -207,13 +207,13 @@
                                         ]
                                     },
                                     "Vns search": {
-                                        "type": "integer"
+                                        "type": "number"
                                     },
                                     "Initial mesh size": {
                                         "type": "number"
                                     },
                                     "Precision": {
-                                        "type": "number"
+                                        "type": ["number", "string"]
                                     },
                                     "Punishment coefficient": {
                                         "type": "number"
