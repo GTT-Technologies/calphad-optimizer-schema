@@ -201,7 +201,7 @@
                                         "type": "integer"
                                     },
                                     "Number of optimization evaluations": {
-                                        "type": "integer"
+                                        "type": ["integer", "string"]
                                     },
                                     "Vns search": {
                                         "type": "integer"
